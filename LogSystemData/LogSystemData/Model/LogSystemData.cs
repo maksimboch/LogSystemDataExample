@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LogSystemData.Model
 {
@@ -7,5 +8,7 @@ namespace LogSystemData.Model
         public int HotelId { get; set; }
         public string Error { get; set; }
         public string Warning { get; set; }
+        public string AdditionalInfo { get; set; }
+        public DateTime TimestampUtc { get; set; }
     }
 }

@@ -1,7 +1,9 @@
-﻿namespace LogSystemData.Generators
+﻿using System.Collections.Generic;
+
+namespace LogSystemData.Generators
 {
     public interface ILogSystemDataGenerator
     {
-        Model.LogSystemData GenerateLogData();
+        List<Model.LogSystemData> GenerateLogData();
     }
 }
