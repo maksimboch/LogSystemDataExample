@@ -30,7 +30,7 @@ namespace LogSystemData.Generators
                     AdditionalInfo = null
                 };
 
-                bool shouldSendWarning = DateTime.Now.Second % 3 == 0;
+                bool shouldSendWarning = ( _random.Next( 0, 11 ) ) % 3 == 0;
 
                 if ( shouldSendWarning )
                 {
